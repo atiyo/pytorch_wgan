@@ -192,3 +192,9 @@ if __name__=='__main__':
                 preds = preds.cpu()
                 save_output_plot(preds,plot_index)
                 plot_index += 1
+
+    #clean up any mess we're leaving on the gpu
+    if use_cuda:
+        torch.cuda.empty_cache()
+
+
