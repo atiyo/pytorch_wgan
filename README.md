@@ -21,10 +21,13 @@ python3 consolidate_output.py
 ## Results
 
 Actual data from Fashion-MNIST:
+
 ![actuals](readme_imgs/actual.jpg "Random Samples from Fashion-MNIST")
 
 Generated data from the Wasserstein GAN after 150 epochs. Randomly chosen samples, they have not been cherry picked:
+
 ![generated](readme_imgs/generated.jpg "Samples from Wasserstein GAN")
 
 Training progress GIF. One frame per epoch, up to epoch 100:
+
 ![training](readme_imgs/training.gif "Training Progress of Wasserstein GAN")
