@@ -1,6 +1,6 @@
 # PyTorch Wasserstein GAN
 
-A barebones implementation of [Wasserstein GAN](https://arxiv.org/abs/1701.07875) in Pytorch, applied to the Fashion-MNIST dataset. Training takes roughly an hour on an Amazon GPU Instance.
+A barebones implementation of [Wasserstein GAN (Arjovsky et al., 2017)](https://arxiv.org/abs/1701.07875) in Pytorch, applied to the Fashion-MNIST dataset. Training takes roughly an hour on an Amazon GPU Instance.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ python3 consolidate_output.py
 Actual data from Fashion-MNIST:
 ![actuals](readme_imgs/actual.jpg "Random Samples from Fashion-MNIST")
 
-Generated data from the Wasserstein GAN after 150 epochs (a bit overkill). These are randomly chosen samples, they have not been cherry picked:
+Generated data from the Wasserstein GAN after 150 epochs. Randomly chosen samples, they have not been cherry picked:
 ![generated](readme_imgs/generated.jpg "Samples from Wasserstein GAN")
 
 Training progress GIF. One frame per epoch, up to epoch 100:
