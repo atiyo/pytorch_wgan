@@ -30,6 +30,10 @@ def get_fashion_mnist():
             os.system('mkdir ./fashion_mnist')
         torchvision.datasets.FashionMNIST('./fashion_mnist', download=True)
 
+
+#grab fashion_mnist if it's not already downloaded.
+get_fashion_mnist()
+
 #data set for fashion_mnist which also preprocesses images to the range [-1,1]
 class image_set(Dataset):
     def __init__(self, data=torchvision.datasets.FashionMNIST('./fashion_mnist')):
@@ -105,9 +109,6 @@ def save_output_plot(pytorch_variable, index, path='./output/'):
     output.save(file_name)
 
 if __name__=='__main__':
-    #grab fashion_mnist if it's not already downloaded.
-    get_fashion_mnist()
-
     #create an output directory if one doesn't exist
     if not os.path.isdir('./output'):
         os.system('mkdir ./output')
